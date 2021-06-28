@@ -18,3 +18,4 @@ let countLetters = function(string) {
   return counts;
 }
     
+module.exports = countLetters;

@@ -28,4 +28,6 @@ let flatten = function(array) {
   }
   return flattened;
 }
+
+module.exports = flatten;
   

@@ -11,10 +11,14 @@ let assertArraysEqual = function(arr1, arr2) {
 const map = function(array, callback) {
   const results = [];
   for (let item of array) {
-    results.push(callback(item));
+    if (callback(item)) {
+      results.push(item);
+    }
   }
   return results;
 }
 
-const results1 = map(words, word => word[0]);
-console.log(results1);
+// const results1 = map(words, word => word[0]);
+// console.log(results1);
+
+module.exports = map;

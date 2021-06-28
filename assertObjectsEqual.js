@@ -44,3 +44,5 @@ const assertObjectsEqual = function(actual, expected) {
     console.log(`❌❌❌ The objects are not equal: ${inspect(actual)} !== ${inspect(expected)} ❌❌❌`);
   }
 };
+
+module.exports = assertObjectsEqual;
