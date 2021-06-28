@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🍀🍀🍀 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
 
 let eqArrays =  function(arr1, arr2) {
   let longest =  arr1.length;
@@ -18,3 +12,5 @@ let eqArrays =  function(arr1, arr2) {
   }
   return true;
 } 
+
+module.exports = eqArrays;
